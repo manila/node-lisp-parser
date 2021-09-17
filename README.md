@@ -1,4 +1,4 @@
-`# Node LISP Parser
+# Node LISP Parser
 
 A Node (JavaScript) approach to parsing a string of lisp code into an Abstract Syntax Tree (AST)
 
