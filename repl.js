@@ -6,16 +6,15 @@ const rl = readline.createInterface({
 	output: process.stdout
 })
 
-const evaluate = (str) => {
-	return parse(str)
-}
+rl.setPrompt('node-lisp-parser> ')
 
-const repl = () => {
-	rl.question('node-lisp-parser> ', (input) => {
-		console.log(input)
-		console.log(evaluate(input))
-		repl()
-	})
-}
+rl.on('close', () => {
+	console.log("")
+})
 
-repl()
+rl.on('line', (input) => {
+	console.log(parse(input))
+	rl.prompt()
+})
+
+rl.prompt()
