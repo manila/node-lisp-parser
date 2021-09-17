@@ -8,13 +8,13 @@ const rl = readline.createInterface({
 
 rl.setPrompt('node-lisp-parser> ')
 
-rl.on('close', () => {
-	console.log("")
-})
-
 rl.on('line', (input) => {
 	console.log(parse(input))
 	rl.prompt()
+})
+
+rl.on('close', () => {
+	console.log("")
 })
 
 rl.prompt()
