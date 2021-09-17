@@ -2,9 +2,10 @@
   "name": "lisp-parser",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "repl.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node repl.js",
+    "repl": "node repl.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
