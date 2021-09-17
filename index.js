@@ -5,7 +5,7 @@ const tokenize = (str) => str
 	.replace(/\)/g, ' )')
 	.split(' ')
 
-const parse = (tokens, ast = [[]]) => {
+const astFromArray = (tokens, ast = [[]]) => {
 
 	if (tokens.length == 0) {
 		//POP! POP! 🙌
@@ -23,7 +23,11 @@ const parse = (tokens, ast = [[]]) => {
 		ast[ast.length - 1].push(token)
 	}
 
-	return parse(tokens, ast)
+	return astFromArray(tokens, ast)
 }
 
-console.log(parse(tokenize(code)))
+const parse = (str) => {
+	return astFromArray(tokenize(str))
+}
+
+console.log(parse(code))
