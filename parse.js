@@ -1,4 +1,4 @@
-onst tokenize = (str) => str
+const tokenize = (str) => str
 	.replace(/\(/g, '( ')
 	.replace(/\)/g, ' )')
 	.split(' ')
