@@ -1,7 +1,7 @@
 const tokenize = (str) => str
 	.replace(/\(/g, '( ')
 	.replace(/\)/g, ' )')
-	.split(' ')
+	.split(/\s+/)
 
 const astFromArray = (tokens, ast = [[]]) => {
 
