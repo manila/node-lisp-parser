@@ -30,7 +30,8 @@ Will be transformed step by step like this
 
 ## TODO
 
-- [ ] Add a REPL
+- [x] Add a REPL
+- [ ] Add interpreter
 - [ ] Implement '+'
 - [ ] Implement 'first'
 - [ ] Implement 'list'
