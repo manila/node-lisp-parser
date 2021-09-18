@@ -1,5 +1,5 @@
 const readline = require('readline')
-const { parse } = require('./parse')
+const { parse } = require('./lisp')
 
 const rl = readline.createInterface({
 	input: process.stdin,
